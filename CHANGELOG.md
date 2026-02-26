@@ -1,3 +1,8 @@
+# v4.10.2 [#](https://github.com/idleberg/vscode-nsis/releases/tag/v4.10.2)
+
+- prevent empty buttons
+- update dependencies
+
 # v4.10.1 [#](https://github.com/idleberg/vscode-nsis/releases/tag/v4.10.1)
 
 - allow overwriting task files
