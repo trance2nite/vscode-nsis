@@ -43,21 +43,28 @@ export async function compilerExit(data: CompilerOutput): Promise<void> {
 
 		const outfileExists = await fileExists(String(data.outFile));
 
-		const openButton = (await isWindowsCompatible()) === true && data.outFile?.length && outfileExists ? 'Run' : '';
-		const revealButton = outfileExists && ['win32', 'darwin', 'linux'].includes(platform()) ? 'Reveal' : '';
+		const buttons: string[] = [];
+
+		if ((await isWindowsCompatible()) === true && data.outFile?.length && outfileExists) {
+			buttons.push('Run');
+		}
+
+		if (outfileExists && ['win32', 'darwin', 'linux'].includes(platform())) {
+			buttons.push('Reveal');
+		}
 
 		if (data.warnings && showNotifications) {
 			if (showOutputView === 'On Warnings & Errors') {
 				makensisChannel.show(true);
 			}
 
-			const choice = await window.showWarningMessage('Compiled with warnings', openButton, revealButton);
+			const choice = await window.showWarningMessage('Compiled with warnings', ...buttons);
 
 			if (choice) {
 				await buttonHandler(choice, data.outFile);
 			}
 		} else if (showNotifications) {
-			const choice = await window.showInformationMessage('Compiled successfully', openButton, revealButton);
+			const choice = await window.showInformationMessage('Compiled successfully', ...buttons);
 
 			if (choice) {
 				await buttonHandler(choice, data.outFile);
