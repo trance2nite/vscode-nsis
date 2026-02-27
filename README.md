@@ -247,6 +247,23 @@ NSIS_APP_ENVIRONMENT=development
 
 </details>
 
+### File Encoding
+
+This extension defaults to UTF-8 with BOM (`utf8bom`) for NSIS files. If you are working with older scripts, you can override the encoding in your workspace settings:
+
+```jsonc
+// .vscode/settings.json
+{
+	{
+		"[nsis]": {
+			"files.encoding": "windows1252"
+		}
+	}
+}
+
+Per workspace: Add "files.encoding": "windows1252" to the [nsis] section in your .vscode/settings.json
+Per file: Click the encoding label in the status bar and choose Save with Encoding
+
 ## Related
 
 - [node-makensis](https://www.npmjs.com/package/makensis)

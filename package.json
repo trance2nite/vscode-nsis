@@ -79,6 +79,11 @@
 		"Other"
 	],
 	"contributes": {
+		"configurationDefaults": {
+			"[nsis]": {
+				"files.encoding": "utf8bom"
+			}
+		},
 		"configuration": {
 			"type": "object",
 			"title": "NSIS",
