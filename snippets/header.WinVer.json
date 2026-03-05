@@ -13,6 +13,13 @@
 		"leftLabelHTML": "<span class='syntax--constant syntax--other'>x64.nsh</span>",
 		"prefix": "AtLeastWin10"
 	},
+	"${AtLeastWin11}": {
+		"body": "\\${AtLeastWin11}$0",
+		"description": "Usage: logic_lib_statement ${AtLeastWin11}",
+		"descriptionMoreURL": "https://github.com/NSIS-Dev/Documentation/blob/master/Includes/WinVer/AtLeastWin11.html?utm_source=vscode&utm_content=snippet",
+		"leftLabelHTML": "<span class='syntax--constant syntax--other'>x64.nsh</span>",
+		"prefix": "AtLeastWin11"
+	},
 	"${AtLeastWin2000}": {
 		"body": "\\${AtLeastWin2000}$0",
 		"description": "Usage: logic_lib_statement ${AtLeastWin2000}",
@@ -40,6 +47,13 @@
 		"descriptionMoreURL": "https://github.com/NSIS-Dev/Documentation/blob/master/Includes/WinVer/AtLeastWin2008.html?utm_source=vscode&utm_content=snippet",
 		"leftLabelHTML": "<span class='syntax--constant syntax--other'>x64.nsh</span>",
 		"prefix": "AtLeastWin2008"
+	},
+	"${AtLeastWin2012R2}": {
+		"body": "\\${AtLeastWin2012R2}$0",
+		"description": "Usage: logic_lib_statement ${AtLeastWin2012R2}",
+		"descriptionMoreURL": "https://github.com/NSIS-Dev/Documentation/blob/master/Includes/WinVer/AtLeastWin2012R2.html?utm_source=vscode&utm_content=snippet",
+		"leftLabelHTML": "<span class='syntax--constant syntax--other'>x64.nsh</span>",
+		"prefix": "AtLeastWin2012R2"
 	},
 	"${AtLeastWin2012}": {
 		"body": "\\${AtLeastWin2012}$0",
@@ -125,6 +139,13 @@
 		"leftLabelHTML": "<span class='syntax--constant syntax--other'>x64.nsh</span>",
 		"prefix": "AtMostWin10"
 	},
+	"${AtMostWin11}": {
+		"body": "\\${AtMostWin11}$0",
+		"description": "Usage: logic_lib_statement ${AtMostWin11}",
+		"descriptionMoreURL": "https://github.com/NSIS-Dev/Documentation/blob/master/Includes/WinVer/AtMostWin11.html?utm_source=vscode&utm_content=snippet",
+		"leftLabelHTML": "<span class='syntax--constant syntax--other'>x64.nsh</span>",
+		"prefix": "AtMostWin11"
+	},
 	"${AtMostWin2000}": {
 		"body": "\\${AtMostWin2000}$0",
 		"description": "Usage: logic_lib_statement ${AtMostWin2000}",
@@ -152,6 +173,13 @@
 		"descriptionMoreURL": "https://github.com/NSIS-Dev/Documentation/blob/master/Includes/WinVer/AtMostWin2008.html?utm_source=vscode&utm_content=snippet",
 		"leftLabelHTML": "<span class='syntax--constant syntax--other'>x64.nsh</span>",
 		"prefix": "AtMostWin2008"
+	},
+	"${AtMostWin2012R2}": {
+		"body": "\\${AtMostWin2012R2}$0",
+		"description": "Usage: logic_lib_statement ${AtMostWin2012R2}",
+		"descriptionMoreURL": "https://github.com/NSIS-Dev/Documentation/blob/master/Includes/WinVer/AtMostWin2012R2.html?utm_source=vscode&utm_content=snippet",
+		"leftLabelHTML": "<span class='syntax--constant syntax--other'>x64.nsh</span>",
+		"prefix": "AtMostWin2012R2"
 	},
 	"${AtMostWin2012}": {
 		"body": "\\${AtMostWin2012}$0",
@@ -258,6 +286,13 @@
 		"leftLabelHTML": "<span class='syntax--constant syntax--other'>x64.nsh</span>",
 		"prefix": "IsWin10"
 	},
+	"${IsWin11}": {
+		"body": "\\${IsWin11}$0",
+		"description": "Usage: logic_lib_statement ${IsWin11}",
+		"descriptionMoreURL": "https://github.com/NSIS-Dev/Documentation/blob/master/Includes/WinVer/IsWin11.html?utm_source=vscode&utm_content=snippet",
+		"leftLabelHTML": "<span class='syntax--constant syntax--other'>x64.nsh</span>",
+		"prefix": "IsWin11"
+	},
 	"${IsWin2000}": {
 		"body": "\\${IsWin2000}$0",
 		"description": "Usage: logic_lib_statement ${IsWin2000}",
@@ -286,6 +321,13 @@
 		"leftLabelHTML": "<span class='syntax--constant syntax--other'>x64.nsh</span>",
 		"prefix": "IsWin2008"
 	},
+	"${IsWin2012R2}": {
+		"body": "\\${IsWin2012R2}$0",
+		"description": "Usage: logic_lib_statement ${IsWin2012R2}",
+		"descriptionMoreURL": "https://github.com/NSIS-Dev/Documentation/blob/master/Includes/WinVer/IsWin2012R2.html?utm_source=vscode&utm_content=snippet",
+		"leftLabelHTML": "<span class='syntax--constant syntax--other'>x64.nsh</span>",
+		"prefix": "IsWin2012R2"
+	},
 	"${IsWin2012}": {
 		"body": "\\${IsWin2012}$0",
 		"description": "Usage: logic_lib_statement ${IsWin2012}",
@@ -303,7 +345,7 @@
 	"${IsWin8.1}": {
 		"body": "\\${IsWin8.1}$0",
 		"description": "Usage: logic_lib_statement ${IsWin8.1}",
-		"descriptionMoreURL": "https://github.com/NSIS-Dev/Documentation/blob/master/Includes/WinVer/IsWin8.html?utm_source=vscode.1",
+		"descriptionMoreURL": "https://github.com/NSIS-Dev/Documentation/blob/master/Includes/WinVer/IsWin8.1.html?utm_source=vscode&utm_content=snippet",
 		"leftLabelHTML": "<span class='syntax--constant syntax--other'>x64.nsh</span>",
 		"prefix": "IsWin8.1"
 	},

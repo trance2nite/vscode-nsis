@@ -1,3 +1,9 @@
+# v5.0.2 [#](https://github.com/idleberg/vscode-nsis/releases/tag/v5.0.2)
+
+- improve syntax highlighting grammar
+	- adjust priorities for variables/defines
+	- update supported WinVer versions
+
 # v5.0.1 [#](https://github.com/idleberg/vscode-nsis/releases/tag/v5.0.1)
 
 - fix syntax error in `README.md`
