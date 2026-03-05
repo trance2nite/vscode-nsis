@@ -254,10 +254,8 @@ This extension defaults to UTF-8 with BOM (`utf8bom`) for NSIS files. If you are
 ```jsonc
 // .vscode/settings.json
 {
-	{
-		"[nsis]": {
-			"files.encoding": "windows1252"
-		}
+	"[nsis]": {
+		"files.encoding": "windows1252"
 	}
 }
 
