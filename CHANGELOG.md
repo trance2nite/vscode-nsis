@@ -1,3 +1,9 @@
+# v5.0.0 [#](https://github.com/idleberg/vscode-nsis/releases/tag/v5.0.0)
+
+- require `vscode>=1.98.0`
+- set default file encoding to `utf8bom`
+- update dependencies
+
 # v4.10.2 [#](https://github.com/idleberg/vscode-nsis/releases/tag/v4.10.2)
 
 - prevent empty buttons
