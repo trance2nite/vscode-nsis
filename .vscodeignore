@@ -18,7 +18,7 @@ src/
 tools/
 tsconfig.json
 tsconfig.tsbuildinfo
-tsdown.config.ts
+tsdown.config.mts
 tslint.json
 types/
 webpack.config.js
