@@ -1,3 +1,7 @@
+# v5.0.1 [#](https://github.com/idleberg/vscode-nsis/releases/tag/v5.0.1)
+
+- fix syntax error in `README.md`
+
 # v5.0.0 [#](https://github.com/idleberg/vscode-nsis/releases/tag/v5.0.0)
 
 - require `vscode>=1.98.0`
