@@ -20,8 +20,8 @@ async function getFormatterOptions(editorTabSize: number): Promise<DentOptions> 
 	};
 }
 
-export async function registerFormatter(): Promise<Disposable[] | undefined> {
-	const documentFormatter = languages.registerDocumentFormattingEditProvider('nsis', {
+export async function registerFormatter(): Promise<Disposable | undefined> {
+	return languages.registerDocumentFormattingEditProvider('nsis', {
 		async provideDocumentFormattingEdits(document, vsOptions) {
 			const options = await getFormatterOptions(vsOptions.tabSize);
 			const original = document.getText();
@@ -36,20 +36,4 @@ export async function registerFormatter(): Promise<Disposable[] | undefined> {
 			return [TextEdit.replace(fullRange, formatted)];
 		},
 	});
-
-	const rangeFormatter = languages.registerDocumentRangeFormattingEditProvider('nsis', {
-		async provideDocumentRangeFormattingEdits(document, range, vsOptions) {
-			const options = await getFormatterOptions(vsOptions.tabSize);
-			const original = document.getText(range);
-			const formatted = await formatDocument(original, options);
-
-			if (formatted === original) {
-				return [];
-			}
-
-			return [TextEdit.replace(range, formatted)];
-		},
-	});
-
-	return [documentFormatter, rangeFormatter];
 }

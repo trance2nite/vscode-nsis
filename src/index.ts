@@ -43,10 +43,10 @@ export async function activate(context: ExtensionContext): Promise<void> {
 
 	// Formatter
 	const { registerFormatter } = await import('./formatter.ts');
-	const formatterDisposables = await registerFormatter();
+	const formatterDisposable = await registerFormatter();
 
-	if (formatterDisposables) {
-		context.subscriptions.push(...formatterDisposables);
+	if (formatterDisposable) {
+		context.subscriptions.push(formatterDisposable);
 	}
 
 	// Diagnostics
