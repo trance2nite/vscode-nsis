@@ -1,3 +1,8 @@
+# v5.1.0 [#](https://github.com/idleberg/vscode-nsis/releases/tag/v5.1.0)
+
+- add formatter for NSIS scripts
+- update dependencies
+
 # v5.0.2 [#](https://github.com/idleberg/vscode-nsis/releases/tag/v5.0.2)
 
 - improve syntax highlighting grammar
