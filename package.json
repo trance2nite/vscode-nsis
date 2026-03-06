@@ -40,6 +40,7 @@
 	"type": "commonjs",
 	"main": "./lib/index.cjs",
 	"dependencies": {
+		"@nsis/dent": "^0.5.1",
 		"@nsis/nlf": "^0.13.0",
 		"makensis": "3.0.3",
 		"micromatch": "^4.0.8",
@@ -74,6 +75,7 @@
 		"vscode": "^1.98.0"
 	},
 	"categories": [
+		"Formatters",
 		"Programming Languages",
 		"Snippets",
 		"Other"
@@ -253,6 +255,39 @@
 					"default": false,
 					"description": "Toggle ANSI deprecation warning",
 					"order": 19
+				},
+				"nsis.formatter.endOfLines": {
+					"type": "string",
+					"enum": [
+						"(auto)",
+						"lf",
+						"crlf"
+					],
+					"enumDescriptions": [
+						"Uses the operating system's default end of line sequence",
+						"line-feed (LF)",
+						"carriage return + line-feed (CRLF)"
+					],
+					"default": "Auto",
+					"markdownDescription": "%nsisFormatterEndOfLines%",
+					"order": 20
+				},
+				"nsis.formatter.indentSize": {
+					"type": "number",
+					"markdownDescription": "%nsisFormatterIndentSize%",
+					"order": 21
+				},
+				"nsis.formatter.trimEmptyLines": {
+					"type": "boolean",
+					"default": true,
+					"markdownDescription": "%nsisFormatterTrimEmptyLines%",
+					"order": 22
+				},
+				"nsis.formatter.useTabs": {
+					"type": "boolean",
+					"default": true,
+					"markdownDescription": "%nsisFormatterUseTabs%",
+					"order": 23
 				}
 			}
 		},
