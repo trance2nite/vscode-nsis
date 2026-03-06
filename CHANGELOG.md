@@ -1,3 +1,7 @@
+# v5.1.1 [#](https://github.com/idleberg/vscode-nsis/releases/tag/v5.1.1)
+
+- add missing LogicLib operator
+
 # v5.1.0 [#](https://github.com/idleberg/vscode-nsis/releases/tag/v5.1.0)
 
 - add formatter for NSIS scripts
