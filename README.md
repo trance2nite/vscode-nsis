@@ -5,7 +5,7 @@
 [![Open VSX Downloads](https://img.shields.io/open-vsx/dt/idleberg/nsis?style=for-the-badge&label=Open%20VSX)](https://open-vsx.org/extension/idleberg/nsis)
 [![Build](https://img.shields.io/github/actions/workflow/status/idleberg/vscode-nsis/default.yml?style=for-the-badge)](https://github.com/idleberg/vscode-nsis/actions)
 
-Language syntax, IntelliSense and build system for Nullsoft Scriptable Install
+Language syntax, snippets, formatter and build system for Nullsoft Scriptable Install
 System (NSIS).
 
 ![Screenshot](https://raw.githubusercontent.com/idleberg/vscode-nsis/main/resources/screenshot.png)
@@ -17,8 +17,8 @@ theme_
 ## Features
 
 - Language syntax for NSIS and NSIS Language Files
-- IntelliSense for core NSIS commands, variables and predefines
-- IntelliSense for core plug-ins:
+- Snippets for core NSIS commands, variables and predefines
+- Snippets for core plug-ins:
   - AdvSplash
   - Banner
   - BgImage
@@ -34,7 +34,7 @@ theme_
   - System
   - UserInfo
   - VPatch
-- IntelliSense for core libraries (“Useful Headers”):
+- Snippets for core libraries (“Useful Headers”):
   - FileFunc
   - LogicLib
   - Memento
@@ -171,6 +171,21 @@ Interchangable word order of NSIS language and library functions
 - `SetLog` completes to `LogSet`
 - `FirstFind` completes to `FindFirst`
 - `${LineFind}` completes to `${FindLine}`
+
+### Formatting
+
+Scripts can be formatted using the experimental [`@nsis/dent`](https://www.npmjs.com/package/@nsis/dent) package. To do so, run *Format Document* or adjust your settings for autoformatting.
+
+**Example**
+
+```json
+{
+	"editor.formatOnSave": true,
+	"[nsis]": {
+			"editor.defaultFormatter": "idleberg.nsis"
+	},
+}
+```
 
 ### Building
 
