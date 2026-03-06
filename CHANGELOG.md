@@ -1,3 +1,7 @@
+# v5.1.2 [#](https://github.com/idleberg/vscode-nsis/releases/tag/v5.1.2)
+
+- update formatter library
+
 # v5.1.1 [#](https://github.com/idleberg/vscode-nsis/releases/tag/v5.1.1)
 
 - add missing LogicLib operator
