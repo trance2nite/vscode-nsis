@@ -7,7 +7,7 @@ export default defineConfig({
 	format: 'cjs',
 	inlineOnly: false,
 	minify: true,
-	noExternal: ['@nsis/nlf', 'makensis', 'micromatch', 'open', 'vscode-get-config', 'which'],
+	noExternal: ['@nsis/dent', '@nsis/nlf', 'makensis', 'micromatch', 'open', 'vscode-get-config', 'which'],
 	outDir: 'lib',
 	platform: 'node',
 	target: 'es2020',
