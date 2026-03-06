@@ -2,8 +2,8 @@ import { commands, type ExtensionContext, languages, window, workspace } from 'v
 
 export async function activate(context: ExtensionContext): Promise<void> {
 	const { compile, showCompilerFlags, showVersion, showHelp } = await import('./makensis');
-	const { convert } = await import('./nlf');
-	const { createTask } = await import('./task');
+	const { convert } = await import('./nlf.ts');
+	const { createTask } = await import('./task.ts');
 
 	context.subscriptions.push(
 		// TextEditor Commands
@@ -41,8 +41,16 @@ export async function activate(context: ExtensionContext): Promise<void> {
 		}),
 	);
 
+	// Formatter
+	const { registerFormatter } = await import('./formatter.ts');
+	const formatterDisposables = await registerFormatter();
+
+	if (formatterDisposables) {
+		context.subscriptions.push(...formatterDisposables);
+	}
+
 	// Diagnostics
-	const { updateDiagnostics } = await import('./diagnostics');
+	const { updateDiagnostics } = await import('./diagnostics.ts');
 	const collection = languages.createDiagnosticCollection('nsis');
 
 	if (window.activeTextEditor) {

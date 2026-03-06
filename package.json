@@ -272,21 +272,21 @@
 					"markdownDescription": "%nsisFormatterEndOfLines%",
 					"order": 20
 				},
-				"nsis.formatter.indentSize": {
-					"type": "number",
-					"markdownDescription": "%nsisFormatterIndentSize%",
-					"order": 21
-				},
 				"nsis.formatter.trimEmptyLines": {
 					"type": "boolean",
 					"default": true,
 					"markdownDescription": "%nsisFormatterTrimEmptyLines%",
-					"order": 22
+					"order": 21
 				},
 				"nsis.formatter.useTabs": {
 					"type": "boolean",
 					"default": true,
 					"markdownDescription": "%nsisFormatterUseTabs%",
+					"order": 22
+				},
+				"nsis.formatter.indentSize": {
+					"type": "number",
+					"markdownDescription": "%nsisFormatterIndentSize%",
 					"order": 23
 				}
 			}
