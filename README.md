@@ -48,6 +48,7 @@ theme_
   - x64
 - NSIS Diagnostics
 - [Drunken NSIS](https://github.com/idleberg/vscode-nsis#drunken-nsis)
+- [Formatting](https://github.com/idleberg/vscode-nsis#formatting)
 - [Build Tools](https://github.com/idleberg/vscode-nsis#building)
 - [Environment Variables](https://github.com/idleberg/vscode-nsis#environment-variables)
 
@@ -174,7 +175,7 @@ Interchangable word order of NSIS language and library functions
 
 ### Formatting
 
-Scripts can be formatted using the experimental [`@nsis/dent`](https://www.npmjs.com/package/@nsis/dent) package. To do so, run *Format Document* or adjust your settings for autoformatting.
+Scripts can be formatted using the experimental [`@nsis/dent`](https://www.npmjs.com/package/@nsis/dent) package. To do so, run *Format Document* or adjust your settings for auto-formatting.
 
 **Example**
 
