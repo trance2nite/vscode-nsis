@@ -51,7 +51,7 @@ theme_
 - [Build Tools](https://github.com/idleberg/vscode-nsis#building)
 - [Environment Variables](https://github.com/idleberg/vscode-nsis#environment-variables)
 
-You can further extend NSIS support with IntelliSense for
+You can further extend NSIS support with snippets for
 [third-party plug-ins](https://github.com/idleberg/vscode-nsis-plugins).
 
 ## Installation
@@ -130,7 +130,7 @@ npm run build
 
 ## Usage
 
-### IntelliSense
+### Snippets
 
 With most commands, you can specify available options before completion. For
 instance, rather than completing `RequestExecutionLevel` and then specifying an
