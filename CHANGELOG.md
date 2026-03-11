@@ -1,3 +1,7 @@
+# v5.1.3 [#](https://github.com/idleberg/vscode-nsis/releases/tag/v5.1.3)
+
+- update formatter library
+
 # v5.1.2 [#](https://github.com/idleberg/vscode-nsis/releases/tag/v5.1.2)
 
 - update formatter library
