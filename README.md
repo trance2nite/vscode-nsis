@@ -181,9 +181,9 @@ Scripts can be formatted using the experimental [`@nsis/dent`](https://www.npmjs
 
 ```json
 {
-	"editor.formatOnSave": true,
 	"[nsis]": {
-			"editor.defaultFormatter": "idleberg.nsis"
+		"editor.defaultFormatter": "idleberg.nsis",
+		"editor.formatOnSave": true
 	},
 }
 ```
