@@ -1,6 +1,6 @@
 # v5.1.4 [#](https://github.com/idleberg/vscode-nsis/releases/tag/v5.1.4)
 
-- disable formatting on save
+- disable formatting on save by default
 
 # v5.1.3 [#](https://github.com/idleberg/vscode-nsis/releases/tag/v5.1.3)
 
