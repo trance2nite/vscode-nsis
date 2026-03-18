@@ -2,6 +2,7 @@
 
 - add "Go to Symbol" support
 - add "Go to Definition" support
+- update dependencies
 
 # v5.1.4 [#](https://github.com/idleberg/vscode-nsis/releases/tag/v5.1.4)
 
