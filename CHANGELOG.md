@@ -1,3 +1,8 @@
+# v5.2.0 [#](https://github.com/idleberg/vscode-nsis/releases/tag/v5.2.0)
+
+- add "Go to Symbol" support
+- add "Go to Definition" support
+
 # v5.1.4 [#](https://github.com/idleberg/vscode-nsis/releases/tag/v5.1.4)
 
 - disable formatting on save by default
