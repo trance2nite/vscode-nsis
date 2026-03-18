@@ -7,6 +7,7 @@ const DEFINITION_PATTERNS = {
 	macro: /^\s*!macro\s+(\w+)/i,
 	define: /^\s*!define\s+(?:\/\w+\s+)*(\w+)/i,
 	variable: /^\s*Var\s+(?:\/GLOBAL\s+)?"?(\w+)"?/i,
+	section: /^\s*(?:Section|SectionGroup)\s+(?:\/[oe]\s+)?(?:"[^"]*"\s+)?(\w+)/i,
 };
 
 function getWordAtPosition(document: TextDocument, position: Position): string | undefined {
