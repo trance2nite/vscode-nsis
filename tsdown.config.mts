@@ -5,7 +5,7 @@ export default defineConfig({
 	deps: {
 		alwaysBundle: ['@nsis/dent', '@nsis/nlf', 'makensis', 'micromatch', 'open', 'vscode-get-config', 'which'],
 		neverBundle: ['vscode'],
-		onlyAllowBundle: false,
+		onlyBundle: false,
 	},
 	entry: ['src/index.ts'],
 	format: 'cjs',
