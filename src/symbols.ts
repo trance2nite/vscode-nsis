@@ -1,4 +1,4 @@
-import { type Disposable, DocumentSymbol, languages, type Position, Range, SymbolKind } from 'vscode';
+import { type Disposable, DocumentSymbol, languages, Range, SymbolKind } from 'vscode';
 
 const DEFINITION_PATTERNS = [
 	{ pattern: /^\s*Function\s+(\.?\w+)/i, kind: SymbolKind.Function },
