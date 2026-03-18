@@ -49,6 +49,13 @@ export async function activate(context: ExtensionContext): Promise<void> {
 		context.subscriptions.push(formatterDisposable);
 	}
 
+	// Symbol Navigation
+	const { registerDefinitionProvider } = await import('./definitions.ts');
+	const { registerReferenceProvider } = await import('./references.ts');
+	const { registerSymbolProvider } = await import('./symbols.ts');
+
+	context.subscriptions.push(registerDefinitionProvider(), registerReferenceProvider(), registerSymbolProvider());
+
 	// Diagnostics
 	const { updateDiagnostics } = await import('./diagnostics.ts');
 	const collection = languages.createDiagnosticCollection('nsis');
