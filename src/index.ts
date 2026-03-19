@@ -51,10 +51,16 @@ export async function activate(context: ExtensionContext): Promise<void> {
 
 	// Symbol Navigation
 	const { registerDefinitionProvider } = await import('./definitions.ts');
+	const { registerDocumentLinkProvider } = await import('./links.ts');
 	const { registerReferenceProvider } = await import('./references.ts');
 	const { registerSymbolProvider } = await import('./symbols.ts');
 
-	context.subscriptions.push(registerDefinitionProvider(), registerReferenceProvider(), registerSymbolProvider());
+	context.subscriptions.push(
+		registerDefinitionProvider(),
+		registerDocumentLinkProvider(),
+		registerReferenceProvider(),
+		registerSymbolProvider(),
+	);
 
 	// Diagnostics
 	const { updateDiagnostics } = await import('./diagnostics.ts');
