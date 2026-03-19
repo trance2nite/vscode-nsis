@@ -5,8 +5,14 @@ const DEFINITION_PATTERNS = [
 	{ pattern: /^\s*!macro\s+(\w+)/i, kind: SymbolKind.Function },
 	{ pattern: /^\s*!define\s+(?:\/\w+\s+)*(\w+)/i, kind: SymbolKind.Constant },
 	{ pattern: /^\s*Var\s+(?:\/GLOBAL\s+)?"?(\w+)"?/i, kind: SymbolKind.Variable },
-	{ pattern: /^\s*(?:Section|SectionGroup)\s+(?:\/[oe]\s+)?(?:"[^"]*"\s+)(\w+)/i, kind: SymbolKind.Module },
-	{ pattern: /^\s*(?:Section|SectionGroup)\s+(?:\/[oe]\s+)?(?:"([^"]+)"|(\w[\w.-]*))\s*$/i, kind: SymbolKind.Module },
+	{
+		pattern: /^\s*(?:Section|SectionGroup)\s+(?:\/[oe]\s+)?(?:"[^"]*"|'[^']*'|`[^`]*`)\s+(\w+)/i,
+		kind: SymbolKind.Module,
+	},
+	{
+		pattern: /^\s*(?:Section|SectionGroup)\s+(?:\/[oe]\s+)?(?:"([^"]+)"|'([^']+)'|`([^`]+)`|(\w[\w.-]*))\s*$/i,
+		kind: SymbolKind.Module,
+	},
 ];
 
 export function registerSymbolProvider(): Disposable {
@@ -20,9 +26,9 @@ export function registerSymbolProvider(): Disposable {
 				for (const { pattern, kind } of DEFINITION_PATTERNS) {
 					const match = pattern.exec(line.text);
 
-					const name = match?.[1] || match?.[2];
+					const name = match?.slice(1).find(Boolean);
 
-					if (name) {
+					if (match && name) {
 						const nameStart = line.text.indexOf(name, match.index);
 						const nameRange = new Range(i, nameStart, i, nameStart + name.length);
 

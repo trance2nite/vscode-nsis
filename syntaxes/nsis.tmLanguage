@@ -95,26 +95,7 @@
             <key>comment</key>
             <string>Section/SectionGroup with explicit ID</string>
             <key>match</key>
-            <string>^\s*(?i)(Section(?:Group)?)\s+(?:/[oe]\s+)?("[^"]*")\s+(\w+)</string>
-            <key>captures</key>
-            <dict>
-                <key>1</key>
-                <dict>
-                    <key>name</key>
-                    <string>keyword.nsis</string>
-                </dict>
-                <key>2</key>
-                <dict>
-                    <key>name</key>
-                    <string>string.quoted.double.nsis</string>
-                </dict>
-            </dict>
-        </dict>
-        <dict>
-            <key>comment</key>
-            <string>Section/SectionGroup with name only</string>
-            <key>match</key>
-            <string>^\s*(?i)(Section(?:Group)?)\s+(?:/[oe]\s+)?(?:"([^"]+)"|([\w.-]+))\s*$</string>
+            <string>^\s*(?i)(Section(?:Group)?)\s+(?:/[oe]\s+)?(?:("[^"]*")|('[^']*')|(`[^`]*`))\s+(\w+)</string>
             <key>captures</key>
             <dict>
                 <key>1</key>
@@ -128,6 +109,50 @@
                     <string>string.quoted.double.nsis</string>
                 </dict>
                 <key>3</key>
+                <dict>
+                    <key>name</key>
+                    <string>string.quoted.single.nsis</string>
+                </dict>
+                <key>4</key>
+                <dict>
+                    <key>name</key>
+                    <string>string.quoted.back.nsis</string>
+                </dict>
+                <key>5</key>
+                <dict>
+                    <key>name</key>
+                    <string>entity.name.section.nsis</string>
+                </dict>
+            </dict>
+        </dict>
+        <dict>
+            <key>comment</key>
+            <string>Section/SectionGroup with name only</string>
+            <key>match</key>
+            <string>^\s*(?i)(Section(?:Group)?)\s+(?:/[oe]\s+)?(?:"([^"]+)"|'([^']+)'|`([^`]+)`|([\w.-]+))\s*$</string>
+            <key>captures</key>
+            <dict>
+                <key>1</key>
+                <dict>
+                    <key>name</key>
+                    <string>keyword.nsis</string>
+                </dict>
+                <key>2</key>
+                <dict>
+                    <key>name</key>
+                    <string>entity.name.section.nsis string.quoted.double.nsis</string>
+                </dict>
+                <key>3</key>
+                <dict>
+                    <key>name</key>
+                    <string>entity.name.section.nsis string.quoted.single.nsis</string>
+                </dict>
+                <key>4</key>
+                <dict>
+                    <key>name</key>
+                    <string>entity.name.section.nsis string.quoted.back.nsis</string>
+                </dict>
+                <key>5</key>
                 <dict>
                     <key>name</key>
                     <string>entity.name.section.nsis</string>
