@@ -1,3 +1,7 @@
+# v5.3.1 [#](https://github.com/idleberg/vscode-nsis/releases/tag/v5.3.1)
+
+- revert accidental formatting suppression
+
 # v5.3.0 [#](https://github.com/idleberg/vscode-nsis/releases/tag/v5.3.0)
 
 - add document link provider
