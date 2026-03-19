@@ -83,7 +83,6 @@
 	"contributes": {
 		"configurationDefaults": {
 			"[nsis]": {
-				"editor.formatOnSave": false,
 				"files.encoding": "utf8bom"
 			}
 		},
