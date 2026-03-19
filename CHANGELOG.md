@@ -1,6 +1,7 @@
 # v5.3.0 [#](https://github.com/idleberg/vscode-nsis/releases/tag/v5.3.0)
 
 - add document link provider
+- improve symbol match groups
 - update dependencies
 
 # v5.2.0 [#](https://github.com/idleberg/vscode-nsis/releases/tag/v5.2.0)
