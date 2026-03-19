@@ -95,7 +95,7 @@
             <key>comment</key>
             <string>Section/SectionGroup with explicit ID</string>
             <key>match</key>
-            <string>^\s*(?i)(Section(?:Group)?)\s+(?:/[oe]\s+)?(?:"[^"]*"\s+)(\w+)</string>
+            <string>^\s*(?i)(Section(?:Group)?)\s+(?:/[oe]\s+)?("[^"]*")\s+(\w+)</string>
             <key>captures</key>
             <dict>
                 <key>1</key>
@@ -106,7 +106,7 @@
                 <key>2</key>
                 <dict>
                     <key>name</key>
-                    <string>entity.name.section.nsis</string>
+                    <string>string.quoted.double.nsis</string>
                 </dict>
             </dict>
         </dict>
@@ -125,7 +125,7 @@
                 <key>2</key>
                 <dict>
                     <key>name</key>
-                    <string>entity.name.section.nsis</string>
+                    <string>string.quoted.double.nsis</string>
                 </dict>
                 <key>3</key>
                 <dict>
