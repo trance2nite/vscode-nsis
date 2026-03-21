@@ -164,8 +164,6 @@ order.
 
 **Examples:**
 
-Interchangable word order of NSIS language and library functions
-
 - `ReadFile` completes to `FileRead`
 - `INIStrRead` completes to `ReadINIStr`
 - `SetSectionText` completes to `SectionSetText`
